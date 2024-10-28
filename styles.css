@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 6800px; /* Altura para permitir el scroll */
+    font-family: Arial, sans-serif;
+    background-size: cover; /* Asegura que las imágenes cubran todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    transition: background-image 1s ease; /* Transición suave entre imágenes */
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: opacity 0.5s ease; /* Añade una transición de desaparición */
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rotatingButton {
+    background-color: rgba(255, 165, 0, 1); /* Fondo naranja */
+    border: none; /* Sin bordes */
+    padding: 10px 40px; /* Ajusta el padding para dar forma ovalada */
+    font-size: 18px; /* Tamaño del texto */
+    color: white; /* Texto blanco */
+    border-radius: 50px; /* Esquina redondeada para que sea ovalado */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    transition: transform 0.5s ease, background-color 0.3s ease; /* Transiciones suaves */
+}
