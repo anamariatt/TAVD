@@ -47,5 +47,5 @@ body, html {
     color: white; /* Texto blanco */
     border-radius: 50px; /* Esquina redondeada para que sea ovalado */
     cursor: pointer; /* Cambia el cursor al pasar por el botón */
-    transition: transform 0.5s ease, background-color 0.3s ease; /* Transiciones suaves */
+    transition: transform 0.5s ease, background-color 0.2s ease; /* Transiciones suaves */
 }
