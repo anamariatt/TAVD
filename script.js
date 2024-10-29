@@ -1,4 +1,4 @@
-const button = document.getElementById('rotatingButton');33
+const button = document.getElementById('rotatingButton');
 const buttonTitle = document.getElementById('buttonTitle');
 const buttonContainer = document.getElementById('buttonContainer');
 const header = document.getElementById('header');
@@ -15,14 +15,22 @@ const backgroundImages = [
     'imagenes/background16.jpg', 'imagenes/background17.jpg'
 ];
 
+// Lista de nombres de botones
+const buttonNames = [
+    'Zonas verdes', 'Sotanos 1', 'Laboratorios', 'Biblioteca', 
+    'Auditorio Principal', 'Cafetería', 'Área Deportiva', 'Parque de Estudio', 
+    'Centro de Innovación', 'Residencias Estudiantiles', 'Oficinas Administrativas', 
+    'Sala de Conferencias', 'Centro de Salud', 'Museo Universitario', 
+    'Plaza de Encuentros', 'Estación de Transporte', 'Jardín Botánico'
+];
+
 // Cambia la imagen de fondo y el título del botón
 function updateBackgroundAndButton() {
     // Cambiar la imagen de fondo del body
     document.body.style.backgroundImage = `url(${backgroundImages[buttonCounter - 1]})`;
 
-    // Actualizar el título del botón
-    buttonTitle.textContent = `Parte de la Universidad ${buttonCounter}`;
-    button.textContent = `Botón ${buttonCounter}`;
+    // Actualizar el título del botón con el nombre correspondiente
+    button.textContent = buttonNames[buttonCounter - 1];
 }
 
 // Event listener para el scroll
